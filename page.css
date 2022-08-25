@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    
+    font-family: 'Libre Baskerville', serif;
+    background-color:#FFF0F3;
+    box-sizing: border-box;
+    height: 100vh;
+
+}
+.menu_bar{
+   /* background-color: #f77998; */
+   background-color:#eccfd4;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 0 5%; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;;
+}
+.logo{
+ color:#000000;
+ font-size: 40px;
+display: flex;
+padding: 5px;
+font-family: 'Abril Fatface', cursive;
+}
+
+.menu_bar ul{
+    list-style: none;
+    display: flex;
+     
+}
+.menu_bar li{
+    padding:10px 30px ;
+    position: relative;
+}
+.menu_bar ul li a{
+    color:#FFF0F3;
+    text-decoration: none;
+    font-size: 20px;
+   
+}
+.left{
+    display: flex;
+    justify-content: center;
+   margin: 5px;
+   
+}
+.menu_bar ul li a:hover{
+  color:#000000 ; 
+} 
+.dropdown__menu{
+   display:none; 
+}
+.menu_bar ul li:hover .dropdown__menu{
+  display: block; 
+  position: absolute; 
+  left:0 ;
+  top: 100% ;
+  background-color:#eccfd4;
+}
+.dropdown__menu ul{
+    display: block;
+    margin: 10px;
+}
+.dropdown__menu ul li{
+   width: 130px; 
+   padding: 9px;
+   display: flex;
+   justify-content: center;
+}
+.fas{
+    float: right;
+    margin: left 10px; 
+    padding-top: 3px;
+}
+.line{
+    overflow: hidden;
+    text-transform: uppercase;
+    transition: .3s ;
+  }
+  .line::before{
+   content: '';
+   position: absolute;
+   top: 0;
+   right: 100%;
+   width: 40%;
+   height: 2px;
+   background-color: #590D22;
+   transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  .line::after{
+   content: '';
+   position: absolute;
+   bottom: 0;
+   left: 100%;
+   width: 40%;
+   height: 2px;
+   background-color: #590D22;
+   transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  .line:hover{
+   color: #ffffff;
+    
+  }
+  .line:hover::before{
+   right: 0;  
+  }
+  .line:hover::after{
+   left: 0;  
+  }
+  /* .search-bar{
+    width: 500px;
+    max-width: 1000px;
+    background:rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+   
+    padding:10px 20px ;} 
+    .search-bar input{
+        background:transparent ;
+        flex:1 ;
+        border: 0;
+        outline: none;
+       font-size: 20px;
+     
+     
+     }
+      .search-bar button img{ 
+        width: 40px; 
+        
+      }
+      .search-bar button{
+        border:0 ;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        background-color: rgb(251, 251, 251);
+      } 
+      */
+      /* lollll i got tiered bas i will quin  */
+
+      .container{
+       
+        width: 100%;
+        height: 600px;
+         display: flex;
+       justify-content: center;
+       justify-content: space-around;
+       margin-top: 100px;
+      }
+      .box{
+        
+        width: 300px;
+        height: 270px;
+        background-color:#FFF0F3;
+       overflow: hidden; 
+       box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    transition: all .6s ease-in-out ;
+       border-radius: 7%;
+       
+      }
+      .box img{
+        width:100%;
+        height: 270px;
+        overflow: hidden;
+        
+
+      } 
+      .box button{
+       width: 50px;
+       height: 40px;
+       border-radius: 5px;
+       font-size: 15px;
+       font-weight: bold;
+       background-color: rgb(244, 235, 235);
+       border: none;
+       box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+       margin-left: 40%;
+       margin-top: 20px;
+       opacity: 0;
+      }
+
+      .box h3{
+        opacity: 0;
+
+      }
+      .box h4{
+        opacity: 0;
+      } 
+      .box:hover{
+        height: 400px;
+       
+      }
+      .box:hover button{
+        opacity: 1;
+      }
+      .box:hover h3{
+        opacity: 1;
+      }
+      .box:hover h4{
+        opacity: 1;
+      }
+      .di{
+       font-size: 70px;
+       display: flex;
+       justify-content: center;
+       margin-top: 100px;
+      }
+      .search-bar{
+        width: 400px; 
+        max-width: 1000px;
+        background:rgba(0, 0, 0, 0.241);
+        display: flex;
+        align-items: center;
+        border-radius: 60px;
+        padding:10px 20px ;
+        
+      }
+      .search-bar input{
+         background:transparent ;
+         flex:1 ;
+         border: 0;
+         outline: none;
+        font-size: 20px;
+      
+      
+      }
+       .search-bar button img{ 
+         width:20px ;
+         
+       }
+       .search-bar button{
+         border:0 ;
+         border-radius: 50%;
+         width: 30px;
+         height: 30px;
+         background-color: rgba(251, 251, 251, 0.651);
+       }
+       .searchbar{
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+       }
+       .hhh{ display: flex;
+    justify-content: center;
+    font-size: 50px;
+    
+    }
